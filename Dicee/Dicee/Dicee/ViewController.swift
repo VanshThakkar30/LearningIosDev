@@ -20,8 +20,8 @@ class ViewController: UIViewController {
 
         let Dice = [UIImage(named: "DiceOne"),UIImage(named: "DiceTwo"),UIImage(named: "DiceThree"),UIImage(named: "DiceFour"),UIImage(named: "DiceFive"),UIImage(named: "DiceSix")]
         
-        diceImageView1.image = Dice.randomElements()
-        diceImageView2.image = Dice.randomElements()
+        diceImageView1.image = Dice.randomElements()!
+        diceImageView2.image = Dice.randomElements()!
 
     }
     
