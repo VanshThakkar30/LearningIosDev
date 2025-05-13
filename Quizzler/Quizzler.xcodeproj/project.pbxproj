@@ -14,6 +14,9 @@
 		AD4BDE5322D878BC005BA4CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD4BDE5222D878BC005BA4CC /* Assets.xcassets */; };
 		AD4BDE5622D878BC005BA4CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD4BDE5422D878BC005BA4CC /* LaunchScreen.storyboard */; };
 		AD7631B622F9851900C6E71B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AD7631B522F9851900C6E71B /* README.md */; };
+		FCB8E5662DD327A000C9EC3B /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB8E5652DD3279800C9EC3B /* Question.swift */; };
+		FCB8E5682DD3284D00C9EC3B /* File.txt in Resources */ = {isa = PBXBuildFile; fileRef = FCB8E5672DD3284D00C9EC3B /* File.txt */; };
+		FCB8E56D2DD3344800C9EC3B /* quizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB8E56C2DD3344100C9EC3B /* quizBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		AD4BDE5522D878BC005BA4CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD4BDE5722D878BC005BA4CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD7631B522F9851900C6E71B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FCB8E5652DD3279800C9EC3B /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		FCB8E5672DD3284D00C9EC3B /* File.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = File.txt; sourceTree = "<group>"; };
+		FCB8E56C2DD3344100C9EC3B /* quizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +67,40 @@
 			children = (
 				AD4BDE4922D878BA005BA4CC /* AppDelegate.swift */,
 				AD4BDE4B22D878BA005BA4CC /* SceneDelegate.swift */,
-				AD4BDE4F22D878BA005BA4CC /* Main.storyboard */,
-				AD4BDE4D22D878BA005BA4CC /* ViewController.swift */,
+				FCB8E56B2DD3308000C9EC3B /* Model */,
+				FCB8E5692DD3304300C9EC3B /* View */,
+				FCB8E56A2DD3306400C9EC3B /* Controller */,
+				FCB8E5672DD3284D00C9EC3B /* File.txt */,
 				AD4BDE5222D878BC005BA4CC /* Assets.xcassets */,
 				AD4BDE5422D878BC005BA4CC /* LaunchScreen.storyboard */,
 				AD4BDE5722D878BC005BA4CC /* Info.plist */,
 			);
 			path = "Quizzler-iOS13";
+			sourceTree = "<group>";
+		};
+		FCB8E5692DD3304300C9EC3B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD4BDE4F22D878BA005BA4CC /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCB8E56A2DD3306400C9EC3B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AD4BDE4D22D878BA005BA4CC /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FCB8E56B2DD3308000C9EC3B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FCB8E56C2DD3344100C9EC3B /* quizBrain.swift */,
+				FCB8E5652DD3279800C9EC3B /* Question.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCB8E5682DD3284D00C9EC3B /* File.txt in Resources */,
 				AD4BDE5622D878BC005BA4CC /* LaunchScreen.storyboard in Resources */,
 				AD4BDE5322D878BC005BA4CC /* Assets.xcassets in Resources */,
 				AD7631B622F9851900C6E71B /* README.md in Resources */,
@@ -143,8 +177,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD4BDE4E22D878BA005BA4CC /* ViewController.swift in Sources */,
+				FCB8E5662DD327A000C9EC3B /* Question.swift in Sources */,
 				AD4BDE4A22D878BA005BA4CC /* AppDelegate.swift in Sources */,
 				AD4BDE4C22D878BA005BA4CC /* SceneDelegate.swift in Sources */,
+				FCB8E56D2DD3344800C9EC3B /* quizBrain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
